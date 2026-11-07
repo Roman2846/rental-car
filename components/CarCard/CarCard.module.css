@@ -1,0 +1,119 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  height: 464px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 268px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #101828;
+}
+
+.model {
+  color: #00aad4;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #101828;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.detailsRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.detailsRow span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #101828;
+}
+
+.detailsRow span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detailsRow span:not(:last-child) {
+  padding-right: 6px;
+  border-right: 1px solid #dadde1;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  margin-top: auto;
+  border-radius: 12px;
+  background-color: #00aad4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.button:hover {
+  background-color: #0095ba;
+}
+
+.button:focus-visible {
+  outline: 2px solid #101828;
+  outline-offset: 2px;
+}

@@ -1,0 +1,133 @@
+.filters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  width: 904px;
+  min-height: 96px;
+  margin: 0 auto;
+}
+
+.fields {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #8d929a;
+}
+
+.mileage {
+  display: flex;
+}
+
+.mileage input {
+  width: 154px;
+  height: 44px;
+  padding: 12px 24px;
+  border: none;
+  background-color: #ffffff;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  outline: 2px solid transparent;
+  transition: outline-color 0.25s ease;
+}
+
+.mileage input::placeholder {
+  color: #101828;
+  opacity: 1;
+}
+
+.mileage input:first-child {
+  border-radius: 12px 0 0 12px;
+  border-right: 1px solid #dadde1;
+}
+
+.mileage input:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.mileage input:focus-visible {
+  outline: 2px solid #00aad4;
+  outline-offset: -2px;
+}
+
+.mileage input::-webkit-inner-spin-button,
+.mileage input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mileage input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 24px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 156px;
+  min-width: 156px;
+  height: 44px;
+  padding: 12px 51px;
+  border: none;
+  border-radius: 12px;
+  background-color: #00aad4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.search:hover {
+  background-color: #0095ba;
+}
+
+.search:focus-visible {
+  outline: 2px solid #101828;
+  outline-offset: 3px;
+}
+
+.clear {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #8d929a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+  transition: color 250ms ease;
+}
+
+.clear:hover {
+  color: #0095ba;
+}
+
+.clear:focus-visible {
+  outline: 2px solid #00aad4;
+  outline-offset: 3px;
+}

@@ -1,0 +1,121 @@
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 196px;
+  height: 44px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #101828;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  transition: outline-color 0.25s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.trigger:focus-visible {
+  outline: 2px solid transparent;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: transform 0.25s ease;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}
+
+.content {
+  z-index: 100;
+  width: var(--radix-popover-trigger-width);
+  max-height: 272px;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 36px rgb(0 0 0 / 5%);
+}
+
+.viewport {
+  padding: 8px;
+}
+
+.scrollArea {
+  max-height: 240px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #dadde1 #ffffff;
+}
+
+.scrollArea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollArea::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.scrollArea::-webkit-scrollbar-thumb {
+  background: #dadde1;
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  color: #8d929a;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.item:hover,
+.item:focus-visible {
+  color: #101828;
+  background-color: #f2f4f7;
+}
+
+.item[data-state="checked"] {
+  color: #101828;
+}
+
+.icon img {
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.selected {
+  color: #101828;
+  font-weight: 600;
+}
